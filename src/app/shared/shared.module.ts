@@ -1,3 +1,4 @@
+import { PromesasComponent } from './../pages/promesas/promesas.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -17,6 +18,7 @@ import { CommonModule } from '@angular/common';
     BreadcrumbsComponent,
     SidebarComponent,
     HeaderComponent,
+    //PromesasComponent
   ],
   imports: [
     CommonModule,
