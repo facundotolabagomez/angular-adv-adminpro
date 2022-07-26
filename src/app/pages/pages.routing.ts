@@ -1,3 +1,4 @@
+import { AuthGuard } from './../guards/auth.guard';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
     {
         path: 'dashboard', 
         component: PagesComponent,
+        canActivate: [AuthGuard],
         children: [
           {path: '', component: DashboardComponent,  data: { titulo: 'Dashboard' } },
           {path: 'progress', component: ProgressComponent, data: { titulo: 'Progress' } },
